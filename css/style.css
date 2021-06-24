@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500;700&display=swap');
+/************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL STYLES/SETUP
+ * -- 1a. Common classes
+ * 2. HEADER
+ * 3. NAVIGATION BAR
+ * 4. ABOUT ME, SKILLS AND MY WORK  
+ * 5. FOOTER
+  * --5a. Navigation Bar
+ * -- 5b. Copyright
+ */
+
+/* 1. GENERAL STYLES/SETUP*/
+
+html { box-sizing:border-box; 
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+h1, h2, h3, h4 {	
+	color: #fe78b7;;
+}
+#myname h2, #myname h3 {
+	color:white;
+}
+h1,h2 {
+	text-align:center;
+	font-weight:bold;
+	font-size:35px;	
+}
+h1, h2, h3, h4 {
+	font-family: 'Roboto', sans-serif;
+}
+body {
+	 font-family:'Lato', sans-serif;
+	 font-weight:normal;
+	 font-size:22px;
+	 max-width: 1200px;
+	max-height: 800px;
+	margin: auto;
+}
+a { 
+	text-decoration:none;
+	color:black;
+}
+a:hover {
+  color:#ffffff;
+}
+/* #main p::first-letter {
+	font-size: 38px;
+} */
+
+/* 1a. Common classes  */
+.page-wrapper, .footer-wrapper { 
+  max-width:1200px;
+  margin:0 auto;
+ }
+/* 2. HEADER */
+#header {	
+	position:relative;
+	height:620px;	
+	background-color: #fe78b7;
+} 
+.flex1 {
+	display:flex;
+	flex-flow:row wrap;	
+}
+#logo, #main-menu{
+	flex:1 0 0;
+}
+#myname, #mypic {
+	flex:1 0 0;
+}
+#logo {
+	margin-left:60px; 
+}
+#myname {
+	margin-bottom:25px;
+	text-align:center;
+	line-height:20px;
+	margin-right:240px;	
+}
+#mypic {
+	position:absolute;
+	bottom:0;
+	right:5vw;	
+	margin-bottom:50px;
+}
+#main-name {
+	font-weight:bold;
+	font-size:110px;
+	padding-right: 90px;
+}
+#webd {
+	font-size:70px;
+	font-weight:normal;
+	padding-right: 90px;
+}
+ /*  3. NAVIGATION BAR  */
+.hidden { 
+  	position:absolute; 
+  	left:-10000px;         /*We give a hidden header(Main-Navigation and Footer Navigation) for readability */
+  	width:0.5px;
+  	height:0.5px;
+}
+#menu li {
+	display:inline-block;
+	list-style-type:none;
+	padding:0 40px;
+	font-weight:bold;
+	font-size:25px;	
+}
+ #menu { 	
+ 	height:70px;
+ 	padding:50px 0; 
+}
+#menu a {
+	color: black;
+}
+#menu a:hover {
+	color: white;
+}
+/* 4. ABOUT ME, SKILLS AND MY PROJECTS */
+
+#my-work, .my-projects {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0 40px;
+}
+.col33 img {
+	padding: 0;
+	margin: 0;
+}
+.col50 img {
+	padding: 0;
+	margin:75px 0;
+	text-align: center;
+}
+.col50 .col50a {
+	flex:1 0 0;	
+	width:70%;
+	text-align: center;	
+}
+
+
+
+div #about-me {
+	margin-right: 0;
+}
+.col33 {
+	flex:1 0 0;
+	/* margin:2px 0 5px 105px; */
+	text-align: center;
+	width:100%;
+}
+#row1,.row1, #my-work, .my-projects {
+	display:flex;
+	/* flex-flow:row wrap;		      */
+	flex-direction: row;
+}
+#skills, #about-about {
+/* margin-left: 50px; */
+margin-right: 50px;
+}
+#quote, #row1 {
+	text-align: center;
+}
+#about-about{	
+	margin: 50px 0px;
+}
+#contact-icons {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 40px;
+}
+#contact-icons a:hover {
+	color: #fe78b7;
+}
+.tech{
+	text-align: center;
+}
+#skillsmenu {	
+	list-style-type:none;
+	
+}
+.link-mywork a {	
+	padding-left:20px;
+	color: #fe78b7;
+}
+/* 5. FOOTER  */
+footer {
+	width:100%;
+	background-color: #fe78b7;
+	height:90px;	
+}
+/* --5a. Footer Navigation Bar  */
+#footer-menu {
+	text-align:center;
+	margin:0;
+	padding:20px 0 10px 0;
+}
+#footer-menu > li {	
+	margin:0px 70px;
+	display:inline;	
+	list-style-type:none;
+	font-weight:bold;
+	font-size:20px;		
+}
+/* -- 6b. Copyright */
+#copyright {
+  	width:100%;
+  	display:inline-block;  	
+  	font-size:12px; 
+	color: white; 
+}
+
+/* 8. Media Queries */
+/* Table style */
+

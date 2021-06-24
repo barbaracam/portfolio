@@ -1,0 +1,273 @@
+/* * {box-sizing:border-box} */
+:root {
+
+  /* Font */
+  --titleFont: 'Karantina', cursive;
+  --bodyFont: 'Lato', sans-serif; 
+
+  /* Colours */
+  --fontGrey: #D3D3D3;
+  --mainBlue:#0d47a1;
+  --backgroundGrey: #A9A9A9;
+  --linkRed: #FF0000;
+  --boldOrange: #ff9800;  
+} 
+/* Basic Elements */
+html {
+  box-sizing:border-box;
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+}
+h1, h2, h4 { 
+  color: var( --fontGrey );
+}
+h1 {
+  font-size: 6.5em;
+  color: var(--boldOrange);
+  font-family: var(--titleFont);
+}
+h2 {
+  text-align: center;
+  font-size: 2em;  
+}
+h2 span {
+  color:var(--boldOrange);  
+}
+h3 {
+  font-size: 1.8em;
+  color: var(--boldOrange)
+}
+th {
+  color: var(--mainBlue);
+  font-size: 1.5em;
+}
+p, td {
+  font-size: 1.2em;
+  text-indent: 30px;
+}
+body {
+  max-width: 1200px;
+  height: 500px;
+  margin: auto;
+  font-family: var( --bodyFont ); 
+  background-color: var(--backgroundGrey);  
+}
+tbody {
+  text-align: center;
+}
+.banner {
+  background-color: var( --mainBlue );
+  display: flex;
+  justify-content: space-around;  
+}
+.siteName {  
+  margin: 25px 200px 0 0;
+}
+.logo {
+  padding: 12px 0;  
+}
+.logo img{
+    height: 150px;  
+}
+nav {
+  background-color: var( --mainBlue );
+  padding: 1.2em 0;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav li {
+  font-family: var(--bodyFont);
+  font-size: 1.3em;
+}
+nav a {
+  text-decoration: none;
+}
+nav a:link {
+  color: var( --fontGrey );
+}
+nav a:visited {
+  color: var( --fontGrey );
+}
+nav a:hover {
+  color: var( --linkRed )  
+}
+header nav ul {
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0px;  
+}
+.borderDiv {
+  background-color: var( --backgroundGrey );
+  height: 0.5px;  
+}
+
+/* The reference for the slideshow-container, it is a code extracted from W3School https://www.w3schools.com/howto/howto_js_slideshow.asp */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;  
+  color: var(--fontGrey);
+  font-weight: bold;
+  font-size: 78px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;  
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+ }  
+/* Number text (1/5 etc) */
+.numbertext {
+  color: var(--fontGrey);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: var(--fontGrey);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: var(--backgroundGrey);
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Row 2 - Recipe */
+.container2 {
+font-family: var(--bodyFont);  
+}
+.container2 .results2a {   
+  width: 100%;
+  text-align: center;
+}
+ .container2 h3 {  
+  text-align: center; 
+} 
+.container2 img {
+  border-radius: 10px;
+  padding: 0px 0 30px 0; 
+}
+.container2 a {
+  color: black;
+  /* text-decoration: none; */
+}
+.container2 a:visited {
+  color: black;
+  /* text-decoration: none; */
+}
+.container2 a:hover {
+  color: var(--linkRed);  
+}
+
+/* Row 3 - Movies */
+
+.container3 {  
+  font-family: var(--bodyFont);  
+}
+.container3 #results table {   
+  width: 80%;
+  margin: 40px 0px 40px 90px; 
+}
+ .container3 h3 {  
+  text-align: center; 
+} 
+.container3 img {
+  border-radius: 10px;    
+}
+.container3 table a {
+  color: black;
+  /* text-decoration: none; */
+}
+.container3 table a:hover {
+  color: var(--linkRed);  
+}
+
+/* Row 4 - Things to do */
+
+.container4 {
+  display: flex;
+  font-family: var(--bodyFont);  
+}
+.container4 div {
+  flex-direction: row;
+  margin: 0 50px 0 50px;
+}
+.container4 div h3 {
+  margin-bottom: 0px;
+  margin-top: 0px;  
+  text-align: center;  
+}
+.container4 div p:first-letter  {  
+  text-transform:capitalize;
+}
+.container4 div img {
+  border-radius: 20px;  
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--mainBlue);
+}
+footer p {
+  color:var(--boldOrange);
+  text-align: center;
+  margin-top: 0;
+}
+.footerNav ul {
+  margin: 0;
+  padding-inline-start: 0;
+  flex-direction: row;  
+  align-items: stretch;
+  justify-content: space-around;  
+  width: 100%;  
+}

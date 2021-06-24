@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500;700&display=swap');
+html { 
+	box-sizing:border-box; 
+}
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+body {
+	text-align:center;
+	background-color:#558b2f;
+}
+h2 {
+	color:#33691e;
+	font-family:'Lato', sans-serif;
+	font-weight:bold;
+	font-size:24px;
+
+}
+h1 {
+	font-family:'Roboto', sans-serif;
+	font-weight:bold;
+	font-size:45px;
+	color:white;
+	padding:15px 2.5px 0 2.5px;
+}
+.parta, h3, #container1  {
+	color:black;
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size:18px;
+}
+#answers {
+	color:white;
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size:18px;	
+}
+p {
+	color:red;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'Lato', sans-serif;
+}
+#container4, #veggie1, #veggie2, #veggie3{
+	color:blue;
+	font-family:'Lato', sans-serif;
+	font-weight:normal;
+	font-size:18px;
+}
+#container1, #container4 {
+
+	padding:0 10px 20px 10px;
+}
+#container {
+	background-color:#9ccc65;
+	border-radius:20px;
+	margin:0 450px;
+}
+#container3 {
+	display:inline-block;
+	text-align:center;	
+}
+#make_salad {
+	display:flex;
+	flex-flow:row wrap;
+	padding:0 60px;
+	margin-left: 60px;
+}
+img {
+	border-radius:20px;
+	border:1px solid black;
+}
+#sendform {
+  background-color:#654321;    
+  color:#ffffff;
+  padding:5px 10px;
+  border-radius:8px;
+  margin-left: 160px;
+}
